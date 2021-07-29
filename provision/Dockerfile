@@ -14,4 +14,4 @@ USER ubuntu
 # shの-sとrustupの-yには短縮形しかありません。
 RUN curl --proto '=https' --tlsv1.2 --silent --show-error https://sh.rustup.rs | sh -s -- -y
 RUN rustup install stable
-RUN cargo install cargo-make
+RUN cargo install cargo-make cargo-watch wasm-pack
